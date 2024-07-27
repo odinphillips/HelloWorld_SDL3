@@ -1,6 +1,6 @@
 # HelloWorld_SDL3
 
-Quickstart for using the SDL3 library.
+Quickstart for using the SDL3 library on Windows (msys).
 
 https://github.com/libsdl-org/SDL
 
@@ -59,4 +59,23 @@ Clone the repo if you haven't already done so.
 ```
 git clone https://github.com/odinphillips/HelloWorld_SDL3.git
 ```
-TODO: write up rest of instructions...
+## Build
+
+```
+cd HelloWorld_SDL3
+mkdir build
+cd build
+cmake ..
+make
+# or try any of the following commands
+# ninja
+# cmake --build .
+```
+
+
+An executable file should have been created in the current directory.
+
+Run it!
+```
+.\helloworld-sdl3.exe
+```

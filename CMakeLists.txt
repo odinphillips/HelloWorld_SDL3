@@ -19,3 +19,7 @@ add_custom_target(copy_dlls
 )
 
 add_dependencies(helloworld-sdl3 copy_dlls)
+
+# This is safe to set on all platforms. Otherwise your SDL app will
+#  have a terminal window pop up with it on Windows.
+set_property(TARGET helloworld-sdl3 PROPERTY WIN32_EXECUTABLE TRUE)
