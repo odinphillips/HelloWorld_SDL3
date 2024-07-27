@@ -64,8 +64,7 @@ git clone https://github.com/odinphillips/HelloWorld_SDL3.git
 Copy the installed SDL3 .dll to the local `dlls` directory. E.g.
 
 ```
-# cd HelloWorld_SDL3
-# cp /c/Program\ Files\ \(x86\)/SDL3/bin/SDL3.dll dlls
+# cp /c/Program\ Files\ \(x86\)/SDL3/bin/SDL3.dll HelloWorld_SDL3/dlls
 ```
 
 ## Build
