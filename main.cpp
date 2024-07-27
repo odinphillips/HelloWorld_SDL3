@@ -11,7 +11,7 @@ static int Create() {
         return -1;
     }
     
-    window = SDL_CreateWindow("Hello SDL", 640, 480, 0);
+    window = SDL_CreateWindow("HelloWorld SDL3", 640, 480, 0);
     if (!window) {
         SDL_Log("SDL_CreateWindow() Error: ", SDL_GetError());
         return -1;
@@ -62,7 +62,7 @@ static void Start() {
         // sine wave with 3 second period
         float sineWave = SDL_sinf((((float)(SDL_GetTicks() % 3000)) / 3000.0f) * 2.0f * SDL_PI_F);
         // multiply amplitude by 127 and shift by +127 to get 0..254 color range
-        float r = (Uint8)(sineWave * 127.0f) + 127;
+        Uint8 r = (Uint8)(sineWave * 127.0f) + 127;
         // set shade of red
         SDL_SetRenderDrawColor(renderer, r, 0, 0, 255); // for SDL_RenderClear()
 
