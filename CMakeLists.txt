@@ -9,11 +9,11 @@ add_executable(helloworld-sdl3
 
 target_link_libraries(helloworld-sdl3 PRIVATE SDL3::SDL3)
 
-set(DLLS_DIR "${CMAKE_SOURCE_DIR}/dlls")
+file(GLOB DLLS "${CMAKE_SOURCE_DIR}/dlls/*.dll")
 
 add_custom_target(copy_dlls
-    COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
-        "${CMAKE_SOURCE_DIR}/dlls"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        ${DLLS}
         "${CMAKE_BINARY_DIR}"
     COMMENT "Copying dlls to build directory"
 )

@@ -4,7 +4,7 @@
 static SDL_Window *window = NULL;
 static SDL_Renderer *renderer = NULL;
 
-static int Create() {
+static int Init() {
     int ret = SDL_Init(SDL_INIT_VIDEO);
     if (ret < 0) {
         SDL_Log("SDL_Init() Error: %s", SDL_GetError());
@@ -26,7 +26,7 @@ static int Create() {
     return 0;
 }
 
-static void Destroy() {
+static void Term() {
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
@@ -81,10 +81,10 @@ static void Start() {
 }
 
 int main(int argc, char* argv[]) {
-    int ret = Create();
+    int ret = Init();
     if (ret == 0) {    
         Start();
     }
-    Destroy();
+    Term();
     return ret;
 }
