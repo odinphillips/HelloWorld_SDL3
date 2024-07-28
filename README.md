@@ -23,6 +23,14 @@ Note: we are using the msys terminal program located here: (it may be different 
 ```
 C:\msys64\ucrt64.exe
 ```
+
+Example usage:
+```
+pacman S <SEARCH>  # To search for all packages with name <SEARCH>.
+
+pacman Ss <package_name>  # To install <package_name>
+```
+
 ## SDL3 build and install
 
 Launch a new msys `ucrt64` terminal (remember to right-click on the app and 'Run as administrator' this is needed for the cmake install step later).
