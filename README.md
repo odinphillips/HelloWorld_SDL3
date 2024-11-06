@@ -76,7 +76,7 @@ mkdir build_clang_debug
 cd build_clang_debug
 cmake -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug -DSDL_STATIC=ON ..
 cmake --build . --config Debug --parallel
-cmake --install . --config Debug --prefix /c/Libs/SDL_clang_debug
+cmake --install . --config Debug --prefix /c/Libs/SDL3/SDL3_clang_debug
 ```
 
 </details>
@@ -91,7 +91,7 @@ mkdir build_clang_debug_asan
 cd build_clang_debug_asan
 cmake -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug -DSDL_STATIC=ON -DCMAKE_C_FLAGS="-fsanitize=address" -DCMAKE_C_FLAGS="-nodefaultlibs" -DCMAKE_CXX_FLAGS="-fsanitize=address" -DCMAKE_CXX_FLAGS="-nodefaultlibs" ..
 cmake --build . --config Debug --parallel
-cmake --install . --config Debug --prefix /c/Libs/SDL_clang_debug_asan
+cmake --install . --config Debug --prefix /c/Libs/SDL3/SDL3_clang_debug_asan
 ```
 </details>
 
@@ -104,7 +104,7 @@ mkdir build_clang_release
 cd build_clang_release
 cmake -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Release -DSDL_STATIC=ON ..
 cmake --build . --config Release --parallel
-cmake --install . --config Release --prefix /c/Libs/SDL_clang_release
+cmake --install . --config Release --prefix /c/Libs/SDL3/SDL3_clang_release
 ```
 
 </details>
@@ -118,7 +118,7 @@ mkdir build_clang_release_asan
 cd build_clang_release_asan
 cmake -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Release -DSDL_STATIC=ON -DCMAKE_C_FLAGS="-fsanitize=address" -DCMAKE_C_FLAGS="-nodefaultlibs" -DCMAKE_CXX_FLAGS="-fsanitize=address" -DCMAKE_CXX_FLAGS="-nodefaultlibs" ..
 cmake --build . --config Release --parallel
-cmake --install . --config Release --prefix /c/Libs/SDL_clang_release_asan
+cmake --install . --config Release --prefix /c/Libs/SDL3/SDL3_clang_release_asan
 ```
 </details>
 
@@ -131,7 +131,7 @@ mkdir build_clang_release_deb
 cd build_clang_release_deb
 cmake -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=RelWithDebInfo -DSDL_STATIC=ON ..
 cmake --build . --config RelWithDebInfo --parallel
-cmake --install . --config RelWithDebInfo --prefix /c/Libs/SDL_clang_release_deb
+cmake --install . --config RelWithDebInfo --prefix /c/Libs/SDL3/SDL3_clang_release_deb
 ```
 
 </details>
@@ -145,7 +145,7 @@ mkdir build_clang_release_deb_asan
 cd build_clang_release_deb_asan
 cmake -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=RelWithDebInfo -DSDL_STATIC=ON -DCMAKE_C_FLAGS="-fsanitize=address" -DCMAKE_C_FLAGS="-nodefaultlibs" -DCMAKE_CXX_FLAGS="-fsanitize=address" -DCMAKE_CXX_FLAGS="-nodefaultlibs" ..
 cmake --build . --config RelWithDebInfo --parallel
-cmake --install . --config RelWithDebInfo --prefix /c/Libs/SDL_clang_release_deb_asan
+cmake --install . --config RelWithDebInfo --prefix /c/Libs/SDL3/SDL3_clang_release_deb_asan
 ```
 </details>
 
@@ -158,7 +158,7 @@ mkdir build_gcc_debug
 cd build_gcc_debug
 cmake -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_BUILD_TYPE=Debug -DSDL_STATIC=ON ..
 cmake --build . --config Debug --parallel
-cmake --install . --config Debug --prefix /c/Libs/SDL_gcc_debug
+cmake --install . --config Debug --prefix /c/Libs/SDL3/SDL3_gcc_debug
 ```
 
 </details>
@@ -172,7 +172,7 @@ mkdir build_gcc_release
 cd build_gcc_release
 cmake -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_BUILD_TYPE=Release -DSDL_STATIC=ON ..
 cmake --build . --config Release --parallel
-cmake --install . --config Release --prefix /c/Libs/SDL_gcc_release
+cmake --install . --config Release --prefix /c/Libs/SDL3/SDL3_gcc_release
 ```
 
 </details>
@@ -186,7 +186,7 @@ mkdir build_gcc_release_deb
 cd build_gcc_release_deb
 cmake -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_BUILD_TYPE=RelWithDebInfo -DSDL_STATIC=ON ..
 cmake --build . --config RelWithDebInfo --parallel
-cmake --install . --config RelWithDebInfo --prefix /c/Libs/SDL_gcc_release_deb
+cmake --install . --config RelWithDebInfo --prefix /c/Libs/SDL3/SDL3_gcc_release_deb
 ```
 
 </details>
